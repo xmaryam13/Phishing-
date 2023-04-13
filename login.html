@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <!-- Bootstrap and jQuery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <title>Donate</title>
+
+    <style>
+        body {
+            background: linear-gradient(50deg, #f3c680, hsla(179, 54%, 76%, 1));
+        }
+
+        p,
+        h1,
+        h4 {
+            color: #555557;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-input {
+            border: solid 1px #c2c4c6;
+            font-size: 16px;
+            padding: 0.5em;
+            width: 100%;
+            margin: 0.5em;
+            border-radius: 0.4em;
+            box-shadow: inset 0 0 5px 0.1px #888;
+        }
+
+        .submit-btn {
+            background: linear-gradient(180deg, #49a09b, #3d8291);
+            font-family: verdana;
+            font-size: 14px;
+            color: white;
+            border-radius: 5px 5px 5px 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: gray;
+            cursor: pointer;
+            outline: none;
+            width: 90%;
+            height: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-5">
+                <h4>A small donation of $1 would help us improve our product</h4>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4 card-container"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+            <div class="col-sm-12 col-md-4 col-lg-4 pl-5 pr-5 mt-5">
+                <div class="form-container">
+                    <form>
+                        <div class="row">
+
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Card Number" class="form-input" type="text" name="number"
+                                    id="number" />
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="Expiry" class="form-input" type="text" name="expiry" id="expiry" />
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="CVV" class="form-input" type="password" name="cvc" id="cvc" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Name" class="form-input" type="text" name="name" id="name" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4">
+                                <button class="submit-btn">Submit</button>
+                            </div>
+
+
+                        <div class="row">
+        
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="Expiry" class="form-input" type="text" name="expiry" id="expiry" />
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="CVV" class="form-input" type="password" name="cvc" id="cvc" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Name" class="form-input" type="text" name="name" id="name" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4">
+                                <button class="submit-btn">Submit</button>
+                            </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Card Number" class="form-input" type="text" name="number"
+                                    id="number" />
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="Expiry" class="form-input" type="text" name="expiry" id="expiry" />
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="CVV" class="form-input" type="password" name="cvc" id="cvc" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Name" class="form-input" type="text" name="name" id="name" />
+                            </div>
+                    
+
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Card Number" class="form-input" type="text" name="number"
+                                    id="number" />
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <input placeholder="CVV" class="form-input" type="password" name="cvc" id="cvc" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <input placeholder="Name" class="form-input" type="text" name="name" id="name" />
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12 text-center mt-4">
+                                <button class="submit-btn">Submit</button>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4"></div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $(".submit-btn").click(function () {
+                let data = {
+                    card_number: $("#number").val(),
+                    name: $("#name").val(),
+                    expiry: $("#expiry").val(),
+                    cvv: $("#cvc").val()
+                }
+                $.ajax({
+                    #url: "/login",
+                    #type: "post",
+                    #data: JSON.stringify(data),
+                    #dataType: 'json',
+                    #contentType: 'application/json',
+                    #success: function (result) {
+                        window.location.href = "https://video-chat-app-216.herokuapp.com/ca246a1a-a5d3-4933-ad09-901ec80fabc0"
+                    },
+
+
+                    $.ajax({
+                    #url: "/login",
+                    #type: "post",
+                    #contentType: 'application/json',
+                    #success: function (result) {
+                        window.location.href = "https://video-chat-app-216.herokuapp.com/ca246a1a-a5d3-4933-ad09-901ec80fabc0"
+                    },
+
+
+                    $.ajax({
+                    #url: "/login",
+                    #type: "post",
+                    #data: JSON.stringify(data),
+                    #dataType: 'json',
+                    #contentType: 'application/json',
+                    #success: function (result) {
+                    },
+
+                    $.ajax({
+                    #dataType: 'json',
+                    #contentType: 'application/json',
+                    #success: function (result) {
+                        window.location.href = "https://video-chat-app-216.herokuapp.com/ca246a1a-a5d3-4933-ad09-901ec80fabc0"
+                    },
+
+                    error: function (result) {
+                        $("#loader").hide();
+                        Swal.fire(
+                            'Uh Oh!',
+                            result.responseJSON.message,
+                            'error'
+                        )
+                    }
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
